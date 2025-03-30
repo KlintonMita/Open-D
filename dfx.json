@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "open_sea_backend": {
+      "main": "src/open_sea_backend/main.mo",
+      "type": "motoko"
+    },
+    "open_sea_frontend": {
+      "dependencies": [
+        "open_sea_backend"
+      ],
+      "source": [
+        "src/open_sea_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "open_sea_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
